@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+
+html, body, h1, h2, h3, h4, ul, li, a, button {
+
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.header {
+
+  background-image: linear-gradient(#ee5253, #d92223);
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 27px;
+
+}
+
+.header h1 {
+
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #fff;
+
+}
+
+.header  .redes_sociais img{
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.header  .redes_sociais ul {
+
+  display: flex;
+  gap: 20px;
+
+}
+
+.main .container_banner {
+
+  background-image: url(../img/img-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: calc(100vh - 81px); */
+  display: flex;
+  align-items: center;
+
+}
+
+.banner_info {
+
+  margin: 332px 0 0 60px;
+
+}
+
+.main .container_banner span {
+
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #fff;
+
+}
+
+.main .container_banner h1 {
+
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 93px;
+  color: #fff;
+  max-width: 756px;
+
+}
+
+.banner_info button {
+
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  padding: 16px 52px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #ee5253;
+  margin: 40px 0 325px 0;
+  
+}
