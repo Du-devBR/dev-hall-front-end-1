@@ -156,6 +156,11 @@ body {
 
 }
 
+.sobre .img_sobre img {
+
+  width: 100%;
+}
+
 .footer form {
 
   background-color: white;
@@ -246,5 +251,179 @@ form .input_forms button {
   font-weight: 400;
   line-height: 20px;
   color: #333;
+
+}
+
+@media (max-width: 768px){
+
+  .main .container_banner {
+
+    height: calc(100vh - 81px);
+
+  }
+
+
+  .main .container_banner span {
+
+    font-size: 22px;
+
+  }
+
+  .main .container_banner h1 {
+
+    font-size: 42px;
+    line-height: 56px;
+    max-width: 100%;
+
+  }
+
+  .banner_info button {
+
+    font-size: 18px;
+    padding: 12px 52px;
+
+  }
+
+  .main .sobre {
+
+    padding: 27px;
+
+  }
+
+  .main .sobre .info_sobre {
+
+    max-width: 50%;
+    margin-top: 0px;
+
+  }
+
+  .sobre .info_sobre h2 {
+
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 16px;
+
+  }
+
+  .sobre .info_sobre p {
+
+    font-size: 18px;
+    line-height: 30px;
+
+  }
+
+  .footer form {
+
+    background-color: white;
+    padding: 27px;
+
+  }
+
+  .footer form h2 {
+
+    font-size: 32px;
+    line-height: 42px;
+
+  }
+
+  .footer form p {
+
+    font-size: 14px;
+    line-height: 22px;
+
+  }
+
+  .footer form .input_forms {
+
+    flex-direction: column;
+
+  }
+
+  form input {
+
+    padding: 8px ;
+    font-size: 14px;
+
+  }
+
+  form .input_forms button {
+
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 0;
+
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .banner_info {
+
+    margin: 0 27px;
+
+  }
+
+  .main .container_banner span {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #fff;
+
+  }
+
+  .main .container_banner h1 {
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #fff;
+    max-width: none;
+
+  }
+
+  .banner_info button {
+
+    font-size: 14px;
+    line-height: 26px;
+    padding: 4px 42px;
+    margin: 32px 0px 0px 0;
+
+  }
+
+  .main .sobre {
+
+    flex-direction: column;
+
+  }
+
+  .main .sobre::before {
+
+    top: 87%;
+
+  }
+
+  .main .sobre .info_sobre {
+
+    max-width: 100%;
+    margin-top: 0px;
+
+  }
+
+  .sobre .info_sobre h2 {
+
+    font-size: 32px;
+    line-height: 59px;
+    margin-bottom: 0px;
+
+  }
+
+  .sobre .info_sobre p {
+
+    font-size: 14px;
+    line-height: 22px;
+
+  }
 
 }
