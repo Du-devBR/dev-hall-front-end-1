@@ -39,6 +39,12 @@ body {
 
 }
 
+.redes_sociais #menu_mobile {
+
+  display: none;
+
+}
+
 .header  .redes_sociais img{
 
   display: flex;
@@ -255,6 +261,103 @@ form .input_forms button {
 }
 
 @media (max-width: 768px){
+
+  /* Menu responsivo
+  -Menu hamburguer via JS
+  -Alerado li para colunas
+  */
+  .redes_sociais #menu_mobile {
+
+    display: flex;
+    padding: 8px 16px;
+    font-size: 14px;
+    border:none;
+    background: none;
+    cursor: pointer;
+
+  }
+
+  .redes_sociais #hamburguer {
+
+    color: #000;
+    display: block;
+    border-top: solid 3px ;
+    width: 20px;
+
+  }
+
+  .redes_sociais #hamburguer::after, #hamburguer::before {
+
+    display: block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.6s;
+    position: relative;
+
+  }
+
+  #nav.active #hamburguer {
+
+    border-top: none;
+
+  }
+
+
+  #nav.active #hamburguer::after {
+
+    transform: rotate(-135deg);
+    transition: 0.8s;
+    top: -7px;
+    color: #fff;
+
+  }
+
+  #nav.active #hamburguer::before {
+
+    transform: rotate(135deg);
+    transition: 0.8s;
+    color: #fff;
+
+  }
+
+
+  .redes_sociais #menu_desktop {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #d92223;
+    width: 100%;
+    height: 0;
+    top: 81px;
+    transition: 0.6s;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+  }
+
+  .redes_sociais #menu_desktop li {
+
+    border-bottom: 1px solid #eaeaea;
+    margin: 0 27px;
+  }
+
+  .redes_sociais #menu_desktop li img {
+
+    padding: 8px 0px;
+
+  }
+
+  #nav.active #menu_desktop {
+
+    height: 40vh;
+    visibility: visible;
+
+  }
 
   .main .container_banner {
 
