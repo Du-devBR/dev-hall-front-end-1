@@ -223,13 +223,20 @@ form label {
 form input {
 
   border: solid 1px #cdcdcd;
-
   padding: 16px ;
   font-size: 18px;
   border-radius: 8px;
   outline: none;
 
 }
+
+form input:valid {
+
+  border: solid 1px #10ac84;
+  transition: 0.5s;
+
+}
+
 
 form .input_forms button {
 

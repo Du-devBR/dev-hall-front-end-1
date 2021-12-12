@@ -15,5 +15,42 @@ function menuToggle(event){
   }
 }
 
-menu_mobile.addEventListener('click', menuToggle)
-menu_mobile.addEventListener('touchstart', menuToggle)
+menu_mobile.addEventListener('click', menuToggle);
+menu_mobile.addEventListener('touchstart', menuToggle);
+
+
+// Validação formulario
+
+const requestFields = document.querySelectorAll('[required')
+
+function customValidation(event){
+  const field = event.target
+
+ function errors(){
+   let foundError = false;
+
+   for(const error in field.validity ){
+     if(error != 'customError' && field.validity[error]){
+       foundError = true
+     }
+
+    }
+
+    return foundError;
+
+}
+const error = errors()
+console.log('erro', error)
+
+if(error){
+  field.setCustomValidity('Campo obrigatorio para contato')
+}
+else{
+  field.setCustomValidity('')
+}
+
+}
+
+for(const field of requestFields){
+  field.addEventListener('invalid', customValidation)
+}
