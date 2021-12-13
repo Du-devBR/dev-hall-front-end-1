@@ -18,6 +18,25 @@ function menuToggle(event){
 menu_mobile.addEventListener('click', menuToggle);
 menu_mobile.addEventListener('touchstart', menuToggle);
 
+//efeito nas letras
+
+const bannerTitle = document.querySelector('.title')
+
+function writingForm(element){
+  const textArray = element.innerHTML.split('');
+  element.innerHTML = '';
+  textArray.forEach(function(letter, i){
+    setTimeout(function(){
+      element.innerHTML += letter;
+    }, 100*i);
+  })
+
+}
+writingForm(bannerTitle)
+
+
+
+
 
 // Validação formulario
 
