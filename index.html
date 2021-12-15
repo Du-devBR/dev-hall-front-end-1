@@ -29,13 +29,13 @@
     </section>
     <section class="sobre">
       <div class="info_sobre">
-        <h2>Nossa iniciativa</h2>
-      <p>Somos desenvolvedores que se dedicam a fazer projetos perfeitos e entregar
+        <h2 data-animation="left">Nossa iniciativa</h2>
+      <p data-animation="left">Somos desenvolvedores que se dedicam a fazer projetos perfeitos e entregar
         valor para todos os seus clientes. Gostamos de ver clientes satisfeitos com
         projetos feitos com carinho, atenção e qualidade altíssima.</p>
       </div>
       <div class="img_sobre">
-        <img src="./img/img-main.jpg" alt="">
+        <img data-animation="right" src="./img/img-main.jpg" alt="">
       </div>
     </section>
   </main>
@@ -50,7 +50,7 @@
        </div>
         <div class="input_whatsapp">
           <label for="">Whatsapp</label>
-        <input required type="tel" placeholder="(99)99999-9999" minlength="14" maxlength="14">
+        <input onkeyup="maskPhoneNumber( this, maskTel );" required type="tel" placeholder="(99) 99999-9999" minlength="1" maxlength="15">
         </div>
         <button type="submit">Peça uma reunião</button>
        </div>
@@ -60,7 +60,6 @@
       <p>iniciativa <strong>DEV HALL</strong></p>
     </div>
   </footer>
-
   <script src="./js/script.js"></script>
 </body>
 </html>
