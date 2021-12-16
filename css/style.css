@@ -19,6 +19,11 @@ html, body, h1, h2, h3, h4, ul, li, a, button {
 }
 
 /*  Animações*/
+html {
+
+  scroll-behavior: smooth;
+
+}
 
 /* Animação pelo scroll */
 [data-animation]{
@@ -161,13 +166,17 @@ body {
   line-height: 26px;
   font-weight: 400;
   padding: 16px 52px;
-  color: #fff;
   border: none;
   border-radius: 8px;
   background-color: #ee5253;
   margin: 40px 0 325px 0;
   transition: 0.5s;
 
+}
+
+.banner_info button a {
+
+  color: #fff;
 }
 
 .banner_info button:hover {
