@@ -1,5 +1,4 @@
-// Menu telas menos que 768px
-
+// Menu telas menor que 768px
 
 const buttonMobile = document.getElementById('menu_mobile');
 
@@ -20,6 +19,7 @@ function menuToggle(event){
 menu_mobile.addEventListener('click', menuToggle);
 menu_mobile.addEventListener('touchstart', menuToggle);
 
+
 //efeito nas letras
 //Função para manipular o texto em formato de arrays e tratar com split,
 // utilizando o metodo FOREACH incrementando letra por letra.
@@ -38,12 +38,30 @@ function writingForm(element){
 writingForm(bannerTitle)
 
 
-
+//Função para usar scroll nas DIV, usano efeito de slide nos campos adicionados.
 //
+const target = document.querySelectorAll('[data-animation]');
+const animationClass = 'animation';
 
+function animateScroll(){
+  const windowTop = window.scrollY + ((window.innerHeight * 3)/4); //Metodo para imagem aparecer quando scroll estiver na metade da DIV.
+  target.forEach(function(element){
+    if(windowTop > element.offsetTop){
+      element.classList.add(animationClass);
+    }
+    else{
+      element.classList.remove(animationClass);
+    }
+  })
+}
 
+animateScroll()
 
-
+if(target.length){
+window.addEventListener('scroll', function(){
+  animateScroll();
+})
+}
 
 
 
