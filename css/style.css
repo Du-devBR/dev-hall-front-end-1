@@ -35,12 +35,12 @@ html {
 
 [data-animation = 'left']{
 
-  transform: translate3d(-50px, 0, 0);
+  transform:translate(-50px);
 }
 
 [data-animation = 'right']{
 
-  transform: translate3d(50px, 0, 0);
+  transform: translate(50px);
 
 }
 
